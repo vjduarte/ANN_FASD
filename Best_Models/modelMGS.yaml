@@ -1,0 +1,403 @@
+backend: tensorflow
+class_name: Sequential
+config:
+  build_input_shape: !!python/object/apply:builtins.dict
+  - SRT_CT: !!python/tuple
+    - null
+    - 1
+    a_1s: !!python/tuple
+    - null
+    - 1
+    a_cf: !!python/tuple
+    - null
+    - 1
+    a_f2: !!python/tuple
+    - null
+    - 1
+    age: !!python/tuple
+    - null
+    - 1
+    amp: !!python/tuple
+    - null
+    - 1
+    amp2: !!python/tuple
+    - null
+    - 1
+    ang_1s: !!python/tuple
+    - null
+    - 1
+    at_err: !!python/tuple
+    - null
+    - 1
+    c_ct: !!python/tuple
+    - null
+    - 1
+    c_ct2: !!python/tuple
+    - null
+    - 1
+    ct: !!python/tuple
+    - null
+    - 1
+    es: !!python/tuple
+    - null
+    - 1
+    fs: !!python/tuple
+    - null
+    - 1
+    fs_se: !!python/tuple
+    - null
+    - 1
+    p_al: !!python/tuple
+    - null
+    - 1
+    s_err: !!python/tuple
+    - null
+    - 1
+    sd_srt: !!python/tuple
+    - null
+    - 1
+    sd_srt2: !!python/tuple
+    - null
+    - 1
+    sex: !!python/tuple
+    - null
+    - 1
+    srt_ct2: !!python/tuple
+    - null
+    - 1
+    t_err: !!python/tuple
+    - null
+    - 1
+    t_s1: !!python/tuple
+    - null
+    - 1
+    t_s1_s2: !!python/tuple
+    - null
+    - 1
+    t_ss: !!python/tuple
+    - null
+    - 1
+    t_te: !!python/tuple
+    - null
+    - 1
+    vel: !!python/tuple
+    - null
+    - 1
+    vel2: !!python/tuple
+    - null
+    - 1
+  layers:
+  - class_name: DenseFeatures
+    config:
+      dtype: float32
+      feature_columns:
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: SRT_CT
+          normalizer_fn: null
+          shape: &id001 !!python/tuple
+          - 1
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: a_1s
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: a_cf
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: a_f2
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: age
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: amp
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: amp2
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: ang_1s
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: at_err
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: c_ct
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: c_ct2
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: ct
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: es
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: fs
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: fs_se
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: p_al
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: s_err
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: sd_srt
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: sd_srt2
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: sex
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: srt_ct2
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: t_err
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: t_s1
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: t_s1_s2
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: t_ss
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: t_te
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: vel
+          normalizer_fn: null
+          shape: *id001
+      - class_name: NumericColumn
+        config:
+          default_value: null
+          dtype: float32
+          key: vel2
+          normalizer_fn: null
+          shape: *id001
+      name: dense_features_67
+      partitioner: null
+      trainable: true
+  - class_name: Dense
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: GlorotUniform
+        config:
+          seed: null
+      kernel_regularizer: null
+      name: dense_6
+      trainable: true
+      units: 64
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: sigmoid
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: GlorotUniform
+        config:
+          seed: null
+      kernel_regularizer: null
+      name: dense_7
+      trainable: true
+      units: 128
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: sigmoid
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: GlorotUniform
+        config:
+          seed: null
+      kernel_regularizer: null
+      name: dense_8
+      trainable: true
+      units: 64
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: GlorotUniform
+        config:
+          seed: null
+      kernel_regularizer: null
+      name: dense_9
+      trainable: true
+      units: 128
+      use_bias: true
+  - class_name: Dropout
+    config:
+      dtype: float32
+      name: dropout_2
+      noise_shape: null
+      rate: 0.1
+      seed: null
+      trainable: true
+  - class_name: Dense
+    config:
+      activation: linear
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      dtype: float32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: GlorotUniform
+        config:
+          seed: null
+      kernel_regularizer: null
+      name: dense_10
+      trainable: true
+      units: 1
+      use_bias: true
+  name: sequential_2
+keras_version: 2.4.0
